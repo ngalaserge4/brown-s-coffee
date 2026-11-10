@@ -1,0 +1,237 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brown's Coffee | Slow coffee, well made</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">BC</span> Brown's Coffee</a
+      >
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a
+        ><a href="index.html#menu">Menu</a
+        ><a href="index.html#story">Our story</a><a href="login.html">Sign in</a
+        ><a class="cart-link" href="#cart" data-cart-open
+          >cart <span class="cart-count">0</span></a
+        >
+        </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Good coffee takes its time.</h1>
+          <p class="hero-copy">
+            A neighborhood coffee room for considered cups, warm light, and the
+            little pause between one thing and the next.
+          </p>
+          <a class="button" href="#menu">Explore the menu <span>↘</span></a>
+        </div>
+        <div class="hero-art">
+          <img src="JS/images/img.png" alt="Warm coffee shop interior" />
+          <div class="art-note">
+            The opportunity<br />to try out<br />
+            something new
+          </div>
+        </div>
+      </section>
+      <section class="section" id="menu">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">The counter</span>
+            <h2>Small menu.<br />Serious coffee.</h2>
+          </div>
+          <p class="section-intro">
+            Seasonal drinks, patient brews, and food made for lingering. Order
+            ahead for pickup at the bar.
+          </p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="coffee">
+            <div>
+              <span class="eyebrow">01 / classic</span>
+              <h3>House espresso</h3>
+              <p>Dark chocolate, toasted almond, a clean finish.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$3.50</span
+              ><button
+                class="add-btn"
+                data-item="House espresso"
+                data-price="3.50"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="coffee">
+            <div>
+              <span class="eyebrow">02 / slow bar</span>
+              <h3>V60 pour over</h3>
+              <p>Bright seasonal single-origin, brewed to order.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$6.00</span
+              ><button
+                class="add-btn"
+                data-item="V60 pour over"
+                data-price="6.00"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="coffee">
+            <div>
+              <span class="eyebrow">03 / signature</span>
+              <h3>Brown's latte</h3>
+              <p>Our espresso, steamed milk, and brown sugar.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$5.50</span
+              ><button
+                class="add-btn"
+                data-item="Brown's latte"
+                data-price="5.50"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="food">
+            <div>
+              <span class="eyebrow">04 / from the oven</span>
+              <h3>Morning bun</h3>
+              <p>Orange zest, cinnamon, and a caramelized edge.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$4.25</span
+              ><button
+                class="add-btn"
+                data-item="Morning bun"
+                data-price="4.25"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="food">
+            <div>
+              <span class="eyebrow">05 / lunch</span>
+              <h3>Egg &amp; herb toast</h3>
+              <p>Jammy egg, greens, chili crisp, country bread.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$9.50</span
+              ><button
+                class="add-btn"
+                data-item="Egg & herb toast"
+                data-price="9.50"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="coffee">
+            <div>
+              <span class="eyebrow">06 / cold</span>
+              <h3>Black tonic</h3>
+              <p>Espresso, tonic, grapefruit peel, lots of ice.</p>
+            </div>
+            <div class="menu-meta">
+              <span>$5.00</span
+              ><button
+                class="add-btn"
+                data-item="Black tonic"
+                data-price="5.00"
+              >
+                Add +
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="story-band" id="story">
+        <div class="section">
+          <div>
+            <span class="eyebrow">A little background</span>
+            <h2>Made for the morning after.</h2>
+          </div>
+          <div>
+            <p>
+              Brown's began with a borrowed machine, a good record collection,
+              and a belief that coffee should feel like a place, not a
+              transaction.
+            </p>
+            <p class="quote">
+              “The best part of the day is the part you choose to keep.”
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              aria-label="Bootstrap"
+            >
+            </a>
+            <p class="text-body-secondary">© 2025</p>
+          </div>
+          <div class="col mb-3"></div>
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
+    <aside class="cart-drawer" id="cart">
+      <div class="drawer-head">
+        <h2>Your bag</h2>
+        <div class="drawer-actions">
+          <button class="clear-cart" data-cart-clear type="button">
+            Clear all
+          </button>
+          <button class="close-cart" data-cart-close aria-label="Close cart">
+            ×
+          </button>
+        </div>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total"><span>Total</span><span>$0.00</span></div>
+      <button class="button" style="width: 100%" data-checkout>
+        Checkout →
+      </button>
+    </aside>
+    <div class="toast" role="status"></div>
+    <script type="module" src="JS/cart.js"></script>
+    <script type="module" src="JS/menu.js"></script>
+  </body>
+</html>
