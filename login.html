@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">BC</span> Brown's Coffee</a >
+      <nav class="nav">
+        <a href="index.html">Back to home</a
+        ><a class="nav-cta" href="register.html">Create account</a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="auth-layout">
+        <div class="auth-aside">
+          <div class="auth-visual">
+            <img src="JS/images/background img.png" alt="A warm coffee shop interior" />
+            <span class="auth-visual-label">Est. 1987 / Mile 4</span>
+          </div>
+          <div class="auth-aside-copy">
+            <span class="eyebrow">Your regular order</span>
+            <h1>Keep your favorites close.</h1>
+            <p>
+              Sign in to keep track of your orders and make your next coffee run a
+              little smoother.
+            </p>
+          </div>
+        </div>
+        <form class="auth-form" id="login-form">
+          <span class="eyebrow">Welcome back</span>
+          <h1>Sign in.</h1>
+          <div class="field">
+            <label for="login-email">Email address</label>
+            <input
+              id="login-email"
+              type="email"
+              required
+              placeholder="you@example.com"
+            />
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input
+              id="login-password"
+              type="password"
+              required
+              placeholder="Your password"
+            />
+          </div>
+          <button class="button" type="submit">Enter the shop →</button>
+          <a class="button alt" href="register.html">Create account</a>
+          <button class="button google-button" type="button">
+            <span class="google-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path fill="#4285F4" d="M21.35 12.23c0-.72-.06-1.42-.18-2.09H12v3.96h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.26Z" />
+                <path fill="#34A853" d="M12 21.5c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.69-1.72-5.46-4.03H3.3v2.53A9.74 9.74 0 0 0 12 21.5Z" />
+                <path fill="#FBBC05" d="M6.54 13.58A5.85 5.85 0 0 1 6.24 12c0-.55.1-1.09.3-1.58V7.89H3.3A9.5 9.5 0 0 0 2.25 12c0 1.48.36 2.88 1.05 4.11l3.24-2.53Z" />
+                <path fill="#EA4335" d="M12 6.39c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.47 14.63 2.5 12 2.5a9.74 9.74 0 0 0-8.7 5.39l3.24 2.53C7.31 8.11 9.46 6.39 12 6.39Z" />
+              </svg>
+            </span>
+            Sign in with Google
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </main>
+    <script>
+      if (location.protocol === "file:") {
+        const status = document.querySelector(".form-status");
+        status.textContent =
+          "Start this site with VS Code Live Server or another local web server. Firebase sign-in will not work from a file:// address.";
+        status.classList.add("is-error");
+      }
+    </script>
+    <script type="module" src="JS/auth.js"></script>
+  </body>
+</html>
